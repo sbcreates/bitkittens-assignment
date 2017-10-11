@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
       // var self = $(this)
 
       $.ajax({
-        url: 'http://bitkittens.herokuapp.com',
+        url: 'http://bitkittens.herokuapp.com/cats.json',
         method: 'GET',
         // data: ,
-        datatype: 'html'
+        datatype: 'json'
       }).done(function(data){
         console.log(data);
       })
